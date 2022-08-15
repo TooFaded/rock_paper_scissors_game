@@ -22,9 +22,9 @@ function getComputerChoice() {
 
 
 //event listeners 
-const buttonRock = document.getElementById("rock");
-const buttonPaper = document.getElementById("paper");
-const buttonScissors = document.getElementById("scissors"); 
+let buttonRock = document.getElementById("rock");
+let buttonPaper = document.getElementById("paper");
+let buttonScissors = document.getElementById("scissors"); 
 const playerChoice = document.getElementById("player-choice");
 const gameResults = document.getElementById("result");
 const playerScoreBoard =  document.getElementById("player-score"); 
@@ -32,7 +32,7 @@ const computerScoreBoard = document.getElementById("computer-score")
 const endGameStatus = document.getElementById("end-game-result")
 const resetButton = document.getElementById("reset-button")
 
-buttonRock.addEventListener("click", function(e) {
+buttonRock.addEventListener("click", function(e){
    
     playerSelection = e.target.id;
     playerChoice.innerHTML = playerSelection;
@@ -88,10 +88,25 @@ resetButton.addEventListener("click", function(e){
 function endGame() {
 
     if (playerScore === 5) {
-       endGameResult = "YOU WIN!";
+       getResult = null;
+       getComputerChoice = null;
+       endGame = null;
+       
+        endGameResult = "YOU WIN!";
+      
+      
     } else if (computerScore === 5) {
+        getResult = null;
+       getComputerChoice = null;
+       endGame = null;
+       
         endGameResult = "YOU LOSE!";
+        
     }
+
+
+      
+
   endGameStatus.innerHTML = endGameResult;
 }
 
