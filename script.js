@@ -55,6 +55,7 @@ buttonScissors.addEventListener("click", function(e) {
     getComputerChoice();
     getResult();
     endGame();
+   
 });
 resetButton.addEventListener("click", function(e){
     reset();

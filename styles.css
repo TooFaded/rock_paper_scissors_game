@@ -1,0 +1,86 @@
+body {
+    background-color: #282727;
+}
+
+#reset-button {
+    width: 150px;
+    height: 75px;
+    border-radius: 20px;
+    font-size: bold;
+}
+
+#rock {
+    height: 100px;
+    width: 175px;
+    background-image: url('/imgs/rock.text.png');
+    background-position: center;
+    background-size: 175px 100px;
+    position: relative;
+    top: 7px;
+    left: 200px;
+    border-radius: 15px;
+    
+}
+
+#paper {
+    height: 100px;
+    width: 175px;
+    background-image: url('/imgs/paper.text.png');
+    background-position: center;
+    background-size: 175px 100px;
+    position: relative;
+    top: 7px;
+    border-radius: 15px;
+    
+}
+
+#scissors {
+    height: 100px;
+    width: 250px;
+    background-image: url('/imgs/scissors.text.png');
+    background-position: center;
+    background-size: 250px 100px;
+    position: relative;
+    top: 7px;
+    right: 200px;
+    border-radius: 15px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UI {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+div, h1, h2  {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 50px #fff;
+   
+    
+}
+
+/* h1  { */
+    /* text-align: center; */
+    /* color: white; */
+    /* font-family: 'Orbitron', sans-serif; */
+/* } */
+
+/* h2{ */
+    /* text-align: center; */
+    /* color: white; */
+    /* font-family: 'Orbitron', sans-serif; */
+
+    /* }  */
+
+
