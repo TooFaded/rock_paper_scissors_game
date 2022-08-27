@@ -16,47 +16,138 @@ body {
     background-position: center;
     background-size: 175px 100px;
     position: relative;
-    top: 7px;
+    top: 20px;
     left: 200px;
+    cursor: pointer;
     border-radius: 15px;
+    border: #fff 3px solid;
     
+    
+}
+
+#rock:hover {
+    box-shadow: 0 0 7px #fff,
+    0 0 50px #fff;
+    border: #fff 6px solid;
+}
+
+
+#rock:hover::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    
+
+    transform: perspective(8em) rotateX(40deg) scale(1.1, 0.35);
+    filter: blur(4em);
+
+
 }
 
 #paper {
     height: 100px;
     width: 175px;
+    cursor: pointer;
     background-image: url('/imgs/paper.text.png');
     background-position: center;
     background-size: 175px 100px;
     position: relative;
-    top: 7px;
+    top: 20px;
     border-radius: 15px;
+    border: #fff 3px solid;
     
+}
+
+#paper:hover {
+    box-shadow: 0 0 7px #fff,
+    0 0 50px #fff;
+    border: #fff 6px solid;
+
+}
+
+
+#paper:hover::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    
+
+    transform: perspective(8em) rotateX(40deg) scale(1.1, 0.35);
+    filter: blur(4em);
 }
 
 #scissors {
     height: 100px;
     width: 250px;
+    cursor: pointer;
     background-image: url('/imgs/scissors.text.png');
     background-position: center;
     background-size: 250px 100px;
     position: relative;
-    top: 7px;
+    top: 20px;
     right: 200px;
     border-radius: 15px;
-    
+    border: #fff 3px solid;
 }
+
+#scissors:hover {
+    box-shadow: 0 0 7px #fff,
+    0 0 50px #fff;
+    border: #fff 6px solid;
+}
+
+
+#scissors:hover::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    
+
+    transform: perspective(8em) rotateX(40deg) scale(1.1, 0.35);
+    filter: blur(4em);
+
+
+}
+
+
+.playerChoice {
+    position: relative;
+    right: 300px;
+    top: 60px;
+}
+
+.compChoice {
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+}
+
+
 
 .container {
     display: flex;
     justify-content: space-evenly;
 }
 
+
 .UI {
     display: flex;
     flex-direction: column;
     column-gap: 30px;
 }
+
 
 div, h1, h2  {
     text-align: center;
