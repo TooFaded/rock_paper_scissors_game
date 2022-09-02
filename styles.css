@@ -154,9 +154,9 @@ div, h1, h2  {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     color: #fff;
-  text-shadow:
-  0 0 7px #fff,
-  0 0 50px #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 50px #fff;
    
     
 }
